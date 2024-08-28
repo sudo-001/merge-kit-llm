@@ -1,15 +1,15 @@
 slices:
   - sources:
-      - model: psmathur/orca_mini_v3_13b
+      - model: lorahub/flan_t5_xl-wiki_qa_Is_This_True_
         layer_range: [0, 40]
-      - model: garage-bAInd/Platypus2-13B
+      - model: lorahub/flan_t5_xl-kilt_tasks_hotpotqa_complex_question
         layer_range: [0, 40]
 # or, the equivalent models: syntax:
 # models:
 #   - model: psmathur/orca_mini_v3_13b
 #   - model: garage-bAInd/Platypus2-13B
 merge_method: slerp
-base_model: psmathur/orca_mini_v3_13b
+base_model: google/flan-t5-xl
 parameters:
   t:
     - filter: self_attn
