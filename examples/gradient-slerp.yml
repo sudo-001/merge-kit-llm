@@ -1,15 +1,15 @@
 slices:
   - sources:
-      - model: google-t5/t5-large
+      - model: google/flan-t5-large
         layer_range: [0, 40]
-      - model: google-t5/t5-xl
+      - model: google/flan-t5-xl
         layer_range: [0, 40]
 # or, the equivalent models: syntax:
 # models:
 #   - model: psmathur/orca_mini_v3_13b
 #   - model: garage-bAInd/Platypus2-13B
 merge_method: slerp
-base_model: google-t5/t5-xl
+base_model: google/flan-t5-xl
 parameters:
   t:
     - filter: self_attn
