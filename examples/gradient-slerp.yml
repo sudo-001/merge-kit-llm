@@ -1,15 +1,15 @@
 slices:
   - sources:
-      - model: google/flan-t5-large
+      - model: mistralai/Mistral-7B-Instruct-v0.2
         layer_range: [0, 40]
-      - model: google/flan-t5-xl
+      - model: mistralai/Mistral-7B-Instruct-v0.2
         layer_range: [0, 40]
 # or, the equivalent models: syntax:
 # models:
 #   - model: psmathur/orca_mini_v3_13b
 #   - model: garage-bAInd/Platypus2-13B
 merge_method: slerp
-base_model: google/flan-t5-xl
+base_model: mistralai/Mistral-7B-Instruct-v0.2
 parameters:
   t:
     - filter: self_attn
