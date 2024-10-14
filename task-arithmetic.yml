@@ -1,16 +1,13 @@
 models:
-  # generation/dissertation/redaction
-  - model: openai-community/gpt2
+  - model: "microsoft/Phi-3.5-mini-instruct"
     parameters:
-      weight: 0.6
-  # logic/mathematical
-  - model: SoumilB7/MathematicalLlama8B
-    parameters:
+      weight: 0.5
+  - model: "microsoft/Phi-3-mini-4k-instruct"
+    parameters: 
+      weight: 0.3
+  - model: "microsoft/Phi-3-mini-128k-instruct"
+    parameters: 
       weight: 0.2
-  # classification
-  - model: google-bert/bert-base-uncased
-    parameters:
-      weight: 0.2
-base_model: MaziyarPanahi/Mistral-7B-Instruct-v0.3
+base_model: "microsoft/Phi-3.5-mini-instruct"
 merge_method: task_arithmetic
 dtype: float16
