@@ -1,16 +1,16 @@
 models:
   # generation/dissertation/redaction
-  - model: meta-llama/Meta-Llama-3-8B
+  - model: Qwen/Qwen2.5-7B
     parameters:
       weight: 0.6
   # logic/mathematical
-  - model: nvidia/OpenMath2-Llama3.1-8B
+  - model: Qwen/Qwen2.5-7B-Instruct
     parameters:
       weight: 0.2
   # classification
-  - model: meta-llama/Llama-2-7b
+  - model: Qwen/Qwen2.5-7B-Instruct-GPTQ-Int4
     parameters:
       weight: 0.2
-base_model: meta-llama/Meta-Llama-3-8B
+base_model: Qwen/Qwen2.5-7B
 merge_method: task_arithmetic
 dtype: float16
